@@ -1,0 +1,94 @@
+
+body  {background:  #f4e6cf;
+       color: #663333;
+       font-size: 11pt;
+       font-family: "times"}
+
+p {font-size: 11pt;
+   font-family: "times"}
+
+p.indent{
+    color: #663333;
+    font-family: "times";
+    text-indent: 11pts}
+
+h1  {text-align: center;
+    color: #663333}
+
+h2  {text-align: center;
+    color: #663333}
+
+h3  {text-align: left;
+    color: #336633}
+
+h4  {text-align: left;
+    color: #336633}
+
+h5  {text-align: left;
+    color: #336633}
+
+h6  {text-align: left;
+    color: #336633}
+
+
+ul {   list-style:url(pics/brownball.gif) outside
+       font-family: "times";
+       font-size: 11pt}
+
+ul ul{font-family: "times";
+       font-size: 11pt}
+
+ul ul ul{font-family: "times";
+       font-size: 11pt}
+
+
+ol {font-family: "times";
+       font-size: 11pt}
+
+ol li { margin-top: 12px;
+  margin-bottom: 7px;}
+
+ol li li { margin-top: 4px;
+margin-bottom: 4px;}
+
+ol ol{font-family: "times";
+       font-size: 10pt}
+
+ol ol ol{font-family: "times";
+       font-size: 10pt}
+
+a:link {color: #336633}
+a:visited {color: #cc9966}
+a:hover {color: #000099}
+
+
+code{background-color: #ffffaa;
+}
+
+em{background-color: #ffffaa;
+   font-style: normal;
+}
+
+
+
+.yellow{
+   background-color: #ffffaa;
+   color: #000000
+}
+#yellow{
+   background-color: #ffffaa;
+   color: #000000
+}
+
+.green{color: #006600;}         /* dot signifies a class */
+#red{color: #990000;}           /* sharp sign signifies an id */
+#redb{color: #990000; font-weight: bold;}
+
+
+div.warn{background: "ffffaa"}
+span.warn{background: "ffffaa"}
+
+xmp {font-size: 10pt;
+    color: #445511}
+    
+}

@@ -13,7 +13,6 @@ Grid::HTML5::begin_html("Grid");
 Grid::HTML5::generate_header();
 print "<h2>Sign up</h2>";
 print <<EOT;
-  <p>Under construction.</p>
   <form method="POST" action="newuser.cgi">
 	Desired User Name: <input type="text" name="username" required><br>
 	Password: . . . . . . . . <input type="password" name="password" required><br>

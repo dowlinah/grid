@@ -28,6 +28,8 @@ Grid::HTML5::generate_header();
 ## outputs to screen.
 print <<EOT;
 
+	<h2>Feed</h2>
+
 <br>
 <b> There are $numfiles posts so far </b> <br><br>
 <br>
@@ -49,14 +51,16 @@ while($count != 0) {
 
 	$file =~ s#\n#<br>\n#g;
 
-	print "<div style='border:1px #000 solid; padding:5px; width:550px;'>\n";
-	print $file;
+	print "<div id='post'>";
 
-	print "<br><a href=\"" . $img . "\">";
+	print "<div class='text'>" . $file . "</div>";
 
-	print "<img src=\"" . $img . "\" width ='100'></a>\n";
+	print "<br> <div class='image'> <a href=\"" . $img . "\">";
 
+	print "<img src=\"" . $img . "\" width='100';></a></div>\n";
+#	print "<div class='clear'></div>";
 	print "</div><br>";
+
 
 	$count--;
 }

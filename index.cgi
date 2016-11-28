@@ -10,8 +10,9 @@ Grid::HTML5::begin_html("Grid");
 Grid::HTML5::generate_header();
 print "<h2>Home</h2>";
 print <<EOT;
-  <p>Welcome to Grid!</p>
+Welcome to Grid! <br>
 
+Grid is a simple Forum application.
 EOT
 Grid::HTML5::generate_footer();
 Grid::HTML5::end_html();

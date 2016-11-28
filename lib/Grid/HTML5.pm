@@ -17,7 +17,7 @@ use Grid::Base;
 sub begin_html {
     my $title  = $_[0];
     my $about  = $_[1] // "Grid " . Grid::Base::get_version;
-    my $author = $_[2] // "Stephen Lorenz";
+    my $author = $_[2] // "Stephen Lorenz, Anthony Dowling";
     my $style  = $_[3] // "css/styles.css";
     my $script = $_[4] // "js/scripts.js";
 
@@ -62,7 +62,7 @@ EOT
 #*.
 sub generate_header {
   my $title = $_[0] // "Grid " . Grid::Base::get_version;
-  my $about = $_[1] // "A simple forum application.";
+  my $about = $_[1] // "";
 
   print <<EOT;
   <header>
@@ -70,19 +70,22 @@ sub generate_header {
     <p>$about</p>
   </header>
   <nav>
-	<a href="index.cgi"> Home</a>
-      <a href="post.cgi"> Post</a>
-      <a href="signup.cgi"> Sign up</a>
-      <a href="feed.cgi"> Feed</a>
+	<ul>	
+	<li><a href="index.cgi"> Home</a></li>
+	<li><a href="post.cgi"> Post</a></li>
+      <li><a href="signup.cgi"> Sign up</a></li>
+      <li><a href="feed.cgi"> Feed</a></li>
   </nav>
+  <div id='wrapper'>
 EOT
 }
 
 sub generate_footer {
   my $year = Grid::Base::localtime()->year;
   print <<EOT;
+
 <footer>
-  <p>In development. $year</p>
+	</div>
   <nav>
     <ul>
       <li><a href="about.cgi">About</a></li>
@@ -90,6 +93,8 @@ sub generate_footer {
       <li><a href="contact.cgi">Contact</a></li>
     </ul>
   </nav>
+  <center><p>In development. $year</p></center>
+
 </footer>
 EOT
 }

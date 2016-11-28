@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Time::Piece;
 
-my $VERSION = "0.4.2";
+my $VERSION = "1.0.0";
 
 sub get_version {
   return $VERSION;
